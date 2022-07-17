@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conventional | Git Flow | Extensions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="./assets/pepe.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ads-left"> 
+        <img src="assets/pepe-dance.png" />
+    </div>
+    <div class="ads-right"> 
+        <img src="assets/pepe-cool.png" />
+    </div>
+
+
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h3 class="card__title">Conventional</h3>
+          <div class="conventional">
+            <div>
+              <img src="assets/conventional.png" />
+            </div>
+            <div>
+              <p>👉 Code must be followed eslint / prettier rules</p>
+              <p>
+                👉 About Function Component - You must devide your component into 3 parts (<span
+                  class="red"
+                  >//! State</span
+                >
+                , <span class="red">//! Function</span> ,
+                <span class="red">//! Render</span>) like image
+              </p>
+              <p>
+                👉 UseEffect will be placed in
+                <span class="red">//! Function</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Git-flow</h3>
+            <div class="git-flow">
+              <div>
+                <img src="assets/git-flow.png" />
+              </div>
+              <div>
+                <p>👉 Branch <span class="red">master</span> to release / deploy for production environment (Only Tech lead has permission to control this, anyone else CANNOT)</p>
+                <p>👉 Branch <span class="red">develop</span> to release / deploy for development environment (tester will test every feature on this environment)</p>
+                <hr />
+                <p>In working:</p>
+                    <div class="in_working_git">
+                        <p>1. Fetch all git branch (git fetch)</p>
+                        <p>2. Checkout to <span class="red">develop</span> branch (git checkout develop)</p>
+                        <p>3. Create new branch from <span class="red">develop</span> branch and name it following guide:
+                            <p style="padding-left: 30px;">💥 If its hot fix, name branch: <span class="red">hotfix/fix_something</span></p>
+                            <p style="padding-left: 30px;">💥 If its new feature, name branch: <span class="red">feature/name_feature</span></p>
+                            <p style="padding-left: 30px;">💥 If its bug fixing, name branch: <span class="red">fix/name_issue</span></p>
+                        </p>
+                        <p>4. After you finish your task (fix bug / clear issue / complete new feature). Please push it to your branch (git push origin <span class="red">name_branch</span>)</p>
+                        <p>5. Go to github / gitlab or ... dashboard of repository of project -> Create a new pull request / merge request -> Waiting Tech lead review</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Extensions Recommended (VS Code)</h3>
+            <div class="extensions">
+              <div>
+                <img src="assets/pepe.png" />
+              </div>
+              <div>
+                <p>👉 Better Comments</p>
+                <p>👉 Auto Import</p>
+                <p>👉 Auto Rename Tag</p>
+                <p>👉 Bracket Pair Colorizer</p>
+                <p>👉 Color Highlight</p>
+                <p>👉 Eslint</p>
+              </div>
+              <div>
+                <p>👉 Prettier - Code formatter</p>
+                <p>👉 GitLens</p>
+                <p>👉 Import Cost</p>
+                <p>👉 vscode-icons</p>
+                <p>👉 Visual Studio IntelliCode</p>
+              </div>
+
+              <div style="flex-grow: 1;">
+                  <h4>Snippets</h4>
+                  <blockquote>
+                    "react-component": {
+                        "prefix": "react-component",
+                        "body": [
+                          "import React from \"react\";",
+                          "",
+                          "const ${VAR} = (props) => {",
+                          "  //! State",
+                          "",
+                          "  //! Function",
+                          "",
+                          "  //! Render",
+                          "  return (",
+                          "    <div>${VAR}</div>",
+                          "  )",
+                          "}",
+                          "",
+                          "export default ${VAR};",
+                          ""
+                        ],
+                        "description": "react-component"
+                      }
+                  </blockquote>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

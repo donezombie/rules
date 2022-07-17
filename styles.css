@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+    --color-text: #fff;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+}
+
+.container {
+    max-width: 1366px;
+    margin:auto;
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--color-text);
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card__title {
+    margin-bottom: 8px;
+}
+
+.conventional, .git-flow, .extensions {
+    display: flex;
+    gap: 24px;
+}
+
+.conventional img {
+    width: 100%;
+}
+
+.git-flow > div:nth-child(1) {
+    order: 2;
+    max-width: 700px;
+}
+
+.git-flow > div:nth-child(1) img {
+    width: 100%;
+}
+
+.git-flow > div:nth-child(2) {
+    order: 1;
+}
+
+.extensions > div:nth-child(1) {
+    max-width: 300px;
+}
+
+.extensions > div:nth-child(2), .extensions > div:nth-child(3) {
+    width: 800px;
+}
+.extensions > div:nth-child(1) img {
+    width: 100%;
+}
+
+blockquote {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.in_working_git > p {
+    font-size: 1rem;
+    padding-left: 12px;
+    margin-bottom: 6px;
+}
+
+.ads-left, .ads-right {
+    position: fixed;
+    max-width: 140px;
+    bottom: -10px;
+}
+
+.ads-right {
+    right: 0;
+}
+
+.ads-left img, .ads-right img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .conventional, .git-flow, .extensions {
+        flex-direction: column;
+    }
+}
